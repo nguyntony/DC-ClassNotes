@@ -1,11 +1,13 @@
 # Numbers!
 
 ## Two types:
-- integers: these are whole numbers that can be positive or negative.
+### integers: 
+- these are whole numbers that can be positive or negative.
 #### examples:
     - 1 
     - -10
-- floats: these are decimal numbers that can be positive or negative.
+### floats: 
+- these are decimal numbers that can be positive or negative.
 #### examples:
     - 1.5
     - -10.5
