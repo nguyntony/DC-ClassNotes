@@ -10,6 +10,15 @@
     - we have assigned i a value of 0
     - this loop will increment i and also print i until i is greater than 10 
     - it stops then because the condition has turned to false.
+    ```python
+    on = True
+    while on:
+        choice = input("Do you want to keep going? ")
+        if choice == "yes":
+            print("okay!")
+        else:
+            on = False
+    ```
 
 
 - Infinite loops
