@@ -46,7 +46,7 @@ groceries = ["apples", "milk", "chips"]
 ```
 - in the groceries list there are 3 items
 - therefore the index stops at 2, since lists begin with 0.
-![photo](images/list2.png)
+- ![photo](images/list2.png)
 
 ```python
 groceries = ["apples", "milk", "chips"]
