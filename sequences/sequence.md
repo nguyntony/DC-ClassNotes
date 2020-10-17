@@ -24,7 +24,7 @@ list_example = ["Hi", "I'm", "a", "list", "of", "strings"]
 ```
 ### How to access lists
 - in the list {list_example}, here is how our values are stored.
-![photo](images/list-table.png)
+- ![photo](images/list-table.png)
 
 - Python uses an integer index to identify values.
 - the first index is always 0
