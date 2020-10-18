@@ -24,7 +24,14 @@ list_example = ["Hi", "I'm", "a", "list", "of", "strings"]
 ```
 ### How to access lists
 - in the list {list_example}, here is how our values are stored.
-- ![photo](images/list-table.png)
+
+| Index | Value  |
+|-------|--------|
+| 0     | "Hi"   |
+| 1     | "I'm"  |
+| 2     | "a"    |
+| 3     | "list" |
+| ...   | ...    |
 
 - Python uses an integer index to identify values.
 - the first index is always 0
@@ -46,7 +53,11 @@ groceries = ["apples", "milk", "chips"]
 ```
 - in the groceries list there are 3 items
 - therefore the index stops at 2, since lists begin with 0.
-- ![photo](images/list2.png)
+| Index | Value    |
+|-------|----------|
+| 0     | "apples" |
+| 1     | "milk"   |
+| 2     | "chips"  |
 
 ```python
 groceries = ["apples", "milk", "chips"]
@@ -69,7 +80,13 @@ except IndexError:
 ```python
 list_example = ["Hi", "I'm", "a", "list", "of", "strings"]
 ```
-![photo](images/list3.png)
+| Index | Value     |
+|-------|-----------|
+| 0     | "Hi"      |
+| -1    | "strings" |
+| -2    | "of"      |
+| -3    | "list     |
+| ...   | ...       |
 ```python
 print("The last item in list_example is:", list_example[-1])
 # Output
@@ -92,7 +109,12 @@ print(list_example[1:3])
 ```python
 pets = ["Taro", "Mochi", "Appa", "Sophie"]
 ```
-![photo](images/list4.png)
+| Index | Value    | Ordinal # |
+|-------|----------|-----------|
+| 0     | "Taro"   | first     |
+| 1     | "Mochi"  | second    |
+| 2     | "Appa"   | third     |
+| 3     | "Sophie" | fourth    |
 
 ```python
 # What's the name of your FIRST pet?
