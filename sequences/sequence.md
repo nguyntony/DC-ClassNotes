@@ -2,6 +2,7 @@
 
 ## What is it?
 - a data type that can store multiple, individual values
+- ordered grouping of items
 
 ```python
 # Examples:
@@ -124,3 +125,24 @@ print(pets[0])
 # What's the name of your THIRD pet?
 print(pets[2])
 ```
+### Updating/Modifying
+```python
+first = 1
+second = 2 
+third = 3
+
+int_list = [first, second, third]
+print(int_list)
+# [1, 2, 3]
+
+second = 5
+print(int_list)
+# [1, 2, 3]
+```
+- we attempt to change second to a different value.
+- just bc we modified the second variable DOES NOT mean we modified the list. 
+- because when we created the list we had it point at second which points at a value. 
+- it continues to point at that value
+- the variable and list is independent of each other.
+- the only time they interacted was at creation of the list.  
+
