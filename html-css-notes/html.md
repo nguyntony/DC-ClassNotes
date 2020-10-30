@@ -131,3 +131,15 @@ ___
                 - the nav will have an "unordered list"
         - script tag:
     
+
+### Style tag
+- this style tag allows you to add styling onto your html doc but this then contradicts the purpose of html doc. 
+``` html
+<body>
+    <div style="color: blue">
+    </div>
+</body>
+``` 
+- this will change the color of the div into blue
+- when you choose to do styling like this be mindful that any children of the parent will inherit the same styling
+    - UNLESS the children have their own styling then it will override the parent's styling.
