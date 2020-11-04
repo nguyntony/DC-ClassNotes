@@ -16,9 +16,17 @@ console.log(anotherString, anotherString.length)
 typeof will tell you the type of the value or whatever. these two have the same properties and behave similarly. 
 
 * anotherString is an instance of a string but it is also an instance of an object.
+
+
 ` new String (“yes”) instanceof Object ` 	output: true
+
+
 ` new String (“yes”) instanceof String `	output: true
+
+
 ` new String (“yes”) instanceof Array `	output: false
+
+
 instanceof will tell us whether what it is we are checking will be an instance of an Object, String or Array.
 There isn’t really a “class” in JS, unlike in python.
 
