@@ -162,7 +162,7 @@ if (a === 10){
 let a = 10
 a === 10 ? "yes" : "no"
 ```
-- condition/expression ? value if true : valure if false
+- condition/expression ? value if true : value if false
 - you can assign this to a variable
 ``` js 
 let result = a === 10 ? "yes" : "guess again"
