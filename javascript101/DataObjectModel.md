@@ -3,15 +3,15 @@
 
 ### Preface
 - - - -
-~Local web server~: some parts of JS need a server to operate correctly. A local server is web server that runs on your local computer in order to host these websites for testing and development.
+*Local web server*: some parts of JS need a server to operate correctly. A local server is web server that runs on your local computer in order to host these websites for testing and development.
 
-~Port~: in web terms, port is a numbered address that allows data traffic to flow. Ports must be opened and ready to receive data if it can be used
+*Port*: in web terms, port is a numbered address that allows data traffic to flow. Ports must be opened and ready to receive data if it can be used
 
-~URL~: URL is directed using a domain name service (DNS), your computer has a domain server and it will tell you where this url should go. It tells you where to go by returning an IP address. 
+*URL*: URL is directed using a domain name service (DNS), your computer has a domain server and it will tell you where this url should go. It tells you where to go by returning an IP address. 
 
-~Localhost~: localhost is the local address for a development computer. It only points to the computer you are currently using. It is also written 127. 0.0.1 (this number will always go to your local machine)
+*Localhost*: localhost is the local address for a development computer. It only points to the computer you are currently using. It is also written 127. 0.0.1 (this number will always go to your local machine)
 
-~TLDR~: if you type in localhost in a browser, it will not go out into the worldwide web ever, it is on your local machine that is hosting information. http://127.0.0.1
+*TLDR*: if you type in localhost in a browser, it will not go out into the worldwide web ever, it is on your local machine that is hosting information. http://127.0.0.1
 
 
 ### Setting up a local host
@@ -20,7 +20,7 @@
 2. In the terminal, type: `python3 -m http.server 5000`
 3. Now you can go into the your browser and type in: `localhost:5000`
 
-~General rule~: **DO NOT** host a directory that may contain anything personal or confidential in that directory. 
+*General rule*: **DO NOT** host a directory that may contain anything personal or confidential in that directory. 
 
 The 5000 that we pass can be a different number but don’t use a number <3500 or >9000.
 
@@ -61,9 +61,9 @@ In this “paragraphs” example, there are multiple p tags in HTML but if you w
 
 If you select an id that does not exist, it will return an HTML collection that is null
 
-~querySelector~: will only return one item and it should be the first item that it finds. if you are trying to select an item that does not exist then it will return null. You can pass it html tags, “#id”, “.class” You wouldn’t really querySelector when you are trying to select a class that has multiple instances, you are using this to select one item. 
+*querySelector*: will only return one item and it should be the first item that it finds. if you are trying to select an item that does not exist then it will return null. You can pass it html tags, “#id”, “.class” You wouldn’t really querySelector when you are trying to select a class that has multiple instances, you are using this to select one item. 
 
-~querySelectorAll~: this will return a Node List (eg. .subclass (class=“subclass”)) and unlike the HTML collection you can use the .forEach() on the Node List.
+*querySelectorAll*: this will return a Node List (eg. .subclass (class=“subclass”)) and unlike the HTML collection you can use the .forEach() on the Node List.
 
 
 ### Selecting elements in DOM
@@ -132,7 +132,7 @@ header.innerText = "I want to change my h1 text."
 innerText will always to text, so if you try to create a div tag inside of the argument you are passing, it will not work. 
 
 
-**innerHTML**
+**.innerHTML**
 ```javascript
 let para = document.createElement("p")
 para.innerHTML = "this is add text"
@@ -142,6 +142,7 @@ This is the least preferred way to create content.
 
 
 ### How to add/change attributes to elements 
+- - - -
 ```javascript
 let main = document.querySelector("main")
 main.id = "main-content"
@@ -221,6 +222,7 @@ Something cool that we can do with the DOM is that in our css file we can have c
 
 
 ### classList
+**.add**
 ```javascript
 let footer = document.querySelector("footer");
 footer.classList.add("classname")
@@ -228,6 +230,22 @@ footer.classList.add("classname")
 Use the html element variable .classList and .add and you pass the class name to the add() and this will always be the name of the class not a css selector (eg. Don’t do this .add(“.classname”)
 
 
+**.remove**
+```javascript
+footer.classList.remove("classname")
+```
+This will remove a class and apparently you can remove a class that isn’t even attached to the element, it won’t error.
+
+
+**.toggle**
+```javascript
+let myInterval = setInterval(function(){
+	myButton.classList.toggle("hidden")
+}, 500)
+```
+This will toggle a hidden class on the button and using the setInterval class allows us to pass the second argument, 500 which is every 5 seconds. 
+
+What is actually happening behind the scenes is that it is adding and removing the classes on and off, so an html element does not need to have that class per say in order to toggle. 
 
 
 
